@@ -8,12 +8,12 @@ This program calculates the distance a suspended object falls given a user input
 import math
 
 print("This program calculates the distance a suspended objects falls", "given a gravity and time")
-gravity = input("Enter gravity in pixels/s^2 : ")
-gravity = float(gravity)
-fps = input("Enter game's FPS : ")
-fps = int(fps)
-number_frames = input("Enter the frame number : ")
-number_frames = int(number_frames)
-time = number_frames / fps
-distance = 0.5 * gravity * time**2
+gravity = input("Enter gravity in pixels/s^2 : ") #Get gravity from user
+gravity = float(gravity) #Convert string to int
+fps = input("Enter game's FPS : ") #Get fps from user
+fps = int(fps) #Convert string to int
+number_frames = input("Enter the frame number : ") #Get number of frames from user
+number_frames = int(number_frames) #Convert string to int
+time = number_frames / fps #Calculate time object is falling
+distance = 0.5 * gravity * time**2 #Calculate distance in pixels object has fallen
 print("It will drop", distance, "pixels in", time, "seconds")
