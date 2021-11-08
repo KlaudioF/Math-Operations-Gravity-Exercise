@@ -9,7 +9,7 @@ import math
 
 print("This program calculates the distance a suspended objects falls", "given a gravity and time")
 gravity = input("Enter gravity in pixels/s^2 : ") #Get gravity from user
-gravity = float(gravity) #Convert string to int
+gravity = float(gravity) #Convert string to float
 fps = input("Enter game's FPS : ") #Get fps from user
 fps = int(fps) #Convert string to int
 number_frames = input("Enter the frame number : ") #Get number of frames from user
